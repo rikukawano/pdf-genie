@@ -13,7 +13,7 @@ Welcome to **PDF Genie**! Your ultimate tool for converting PDF files into image
 1. **Clone the Repository**:
 
    ```sh
-   git clone https://github.com/yourusername/pdf-genie.git
+   git clone https://github.com/rikukawano/pdf-genie.git
    cd pdf-genie
    ```
 
