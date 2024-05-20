@@ -9,6 +9,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.11.3",
     "@types/yargs": "^17.0.32",
     "pdf2pic": "latest",
     "pdfjs-dist": "latest",

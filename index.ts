@@ -5,6 +5,7 @@ import path from "path";
 import { hideBin } from "yargs/helpers";
 import yargs from "yargs/yargs";
 import pdfToImages from "./pdfToImages";
+import extractTextFromImages from "./visionProcessor";
 
 // Function to process each file and convert it to images
 async function processFiles(files: string[], outputDir: string) {
@@ -13,7 +14,10 @@ async function processFiles(files: string[], outputDir: string) {
     const imagePaths = await pdfToImages(file, outputDir);
     console.log(`Converted ${imagePaths.length} pages from ${file}`);
     console.log("Image paths:", imagePaths);
-    // TODO: Implement LLM processing logic here
+
+    // Process the images using the Gemini-Pro-Vision model
+    const structuredText = await extractTextFromImages(imagePaths);
+    console.log("Structured text:", structuredText);
   }
 }
 

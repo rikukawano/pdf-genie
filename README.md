@@ -1,5 +1,3 @@
-Here's the formatted README:
-
 # 📚 PDF Genie
 
 Welcome to **PDF Genie**! Your ultimate tool for converting PDF files into images effortlessly. 🚀
